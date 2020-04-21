@@ -1,0 +1,9 @@
+src
+
+# Ignore all files except those that npm will always include:
+/*.*
+
+target/test
+**/*.spec.js
+**/*.spec.d.ts
+**/*.js.map

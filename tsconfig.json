@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es7",
+      "scripthost"
+    ],
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "target",
+    "downlevelIteration": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    // Works with Typescript, but not with Jasmine:
+    // "baseUrl": "./",
+    // "paths": { "main/*": ["./src/main/*"] },
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    /* Other Options */
+    "pretty": true,
+    "resolveJsonModule": true
+  }
+}

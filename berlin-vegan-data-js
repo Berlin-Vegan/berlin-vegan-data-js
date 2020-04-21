@@ -1,0 +1,4 @@
+#!/bin/sh
+
+node "target/src/cli/berlin-vegan-data-js.js" "$@"
+exit $?

@@ -1,0 +1,21 @@
+{
+    "osm": {
+        "organizationBaseUrl": "https://www.berlin-vegan.de/",
+        "locationData": {
+            "addressCountryCode": "DE",
+            "phoneCountryCode": 49
+        },
+        "inferRedundantTags": true
+    },
+    "overpass": {
+        "copyright": "berlin-vegan.de",
+        "license": "",
+        "placeholders": {
+            "nodeId": 4711,
+            "timestamp": "2020-04-10T15:36:02Z"
+        }
+    },
+    "schemaOrg": {
+        "includeReviewText": false
+    }
+}

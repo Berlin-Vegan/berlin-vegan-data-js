@@ -1,0 +1,51 @@
+{
+  "name": "@berlin-vegan/berlin-vegan-data-js",
+  "version": "0.1.0",
+  "_versionNumber": 0.1,
+  "description": "A library and stand-alone program that specifies the native open-source JSON format used by Berlin-Vegan and allows to convert data in this format to be converted to OpenStreetMap/Overpass and Schema.org JSON formats.",
+  "main": "target/index.js",
+  "bin": "target/cli/berlin-vegan-data-js.js",
+  "types": "target/index.d.ts",
+  "scripts": {
+    "_clean": "rimraf target",
+    "_compile": "tsc",
+    "_compile:watch": "tsc --watch",
+    "_lint": "tslint src/**/*.ts",
+    "_lint:watch": "chokidar src/**/*.ts --command \"npm run _lint\" --throttle 2000",
+    "_test": "jasmine target/src/main/**/*.js --helper=target/test/helper.js --stop-on-failure=",
+    "_test:watch": "chokidar target/src/main/**/*.js --command \"npm run _test\" --throttle 2000",
+    "pretest": "npm run _clean && npm run _compile && npm run _lint",
+    "test": "npm run _test",
+    "prepack": "npm test",
+    "start": "npm test && concurrently \"npm run _compile:watch\" \"npm run _lint:watch\" \"npm run _test:watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berlin-vegan/berlin-vegan-data-js.git"
+  },
+  "keywords": [
+    "berlin-vegan",
+    "berlin-vegan-map",
+    "vegan",
+    "map"
+  ],
+  "license": "AGPL-3.0-only",
+  "homepage": "https://github.com/berlin-vegan/berlin-vegan-data-js#readme.md",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "commander": "^4.1.1",
+    "core-js": "^3.6.5",
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/node": "^13.13.0",
+    "@types/source-map-support": "^0.5.1",
+    "chokidar-cli": "^2.1.0",
+    "concurrently": "^5.1.0",
+    "jasmine": "^3.5.0",
+    "rimraf": "^3.0.2",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  }
+}
