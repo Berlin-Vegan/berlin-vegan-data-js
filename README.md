@@ -45,6 +45,13 @@ You may opt to include these redundant tags.
 
 ## Usage
 
+### Requirements
+
+- [Node](https://nodejs.org/) 12.16.1
+  Earlier versions may work, but they have not been tested.
+
+-
+
 ### Command-line
 
 Example:
