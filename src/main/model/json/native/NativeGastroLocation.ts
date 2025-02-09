@@ -10,12 +10,6 @@ export interface NativeGastroLocation extends NativeLocation {
      */
     district: string
 
-    /**
-     * Pictures
-     *
-     * 0 to many items
-     */
-    pictures: Picture[]
 
     /**
      * Public transport description
@@ -96,16 +90,3 @@ export interface NativeGastroLocation extends NativeLocation {
     email?: string
 }
 
-export interface Picture {
-
-    /**
-     * URL
-     *
-     * Non-empty
-     */
-    url: string
-
-    width: number
-
-    height: number
-}
