@@ -1,7 +1,7 @@
 {
   "name": "@berlin-vegan/berlin-vegan-data-js",
-  "version": "0.3.0",
-  "_versionNumber": 0.3,
+  "version": "0.4.0",
+  "_versionNumber": 0.4,
   "description": "A library and stand-alone program that specifies the native open-source JSON format used by Berlin-Vegan and allows to convert data in this format to be converted to OpenStreetMap/Overpass and Schema.org JSON formats.",
   "main": "target/src/index.js",
   "bin": {
