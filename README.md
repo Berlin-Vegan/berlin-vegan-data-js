@@ -47,10 +47,7 @@ You may opt to include these redundant tags.
 
 ### Requirements
 
-- [Node](https://nodejs.org/) 12.16.1
-  Earlier versions may work, but they have not been tested.
-
--
+- [Node](https://nodejs.org/)
 
 ### Command-line
 
@@ -102,4 +99,4 @@ No global modules other than `npm` are necessary.
 ## License
 
 AGPL-3.0-only (see `LICENSE.txt`)\
-Copyright (C) 2015-2020  Berlin-Vegan
+Copyright (C) 2015-2025  Berlin-Vegan
