@@ -4,7 +4,9 @@
   "_versionNumber": 0.3,
   "description": "A library and stand-alone program that specifies the native open-source JSON format used by Berlin-Vegan and allows to convert data in this format to be converted to OpenStreetMap/Overpass and Schema.org JSON formats.",
   "main": "target/src/index.js",
-  "bin": "target/src/cli/berlin-vegan-data-js.js",
+  "bin": {
+    "berlin-vegan-data-js": "target/src/cli/berlin-vegan-data-js.js"
+  },
   "types": "target/src/index.d.ts",
   "scripts": {
     "_clean": "rimraf target",
