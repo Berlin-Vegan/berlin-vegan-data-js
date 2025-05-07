@@ -197,4 +197,25 @@ export interface NativeLocation {
      * Non-empty
      */
     reviewURL?: string
+
+    /**
+     * Pictures
+     *
+     * 0 to many items
+     */
+    pictures: Picture[]
 }
+export interface Picture {
+
+    /**
+     * URL
+     *
+     * Non-empty
+     */
+    url: string
+
+    width: number
+
+    height: number
+}
+
